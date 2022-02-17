@@ -7,14 +7,46 @@ function scrollHeader() {
 window.addEventListener("scroll", scrollHeader)
 
 /*=============== SERVICES MODAL ===============*/
+const modalViews = document.querySelectorAll(".services__modal");
+modalBtns = document.querySelectorAll(".services__button");
+modalClose = document.querySelectorAll(".services__modal-close");
 
+let modal = function (modalClick) {
+    /* Adding the active__modal class to the modal that was clicked. */
+    modalViews[modalClick].classList.add("active__modal")
+}
 
+modalBtns.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modal(i)
+    })
+});
+
+modalClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalViews.forEach((mv) => {
+            mv.classList.remove('active__modal')
+        })
+    })
+})
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortfolio = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 200
+    }
+});
 
 /* Link active work */
+const linkWork = document.querySelectorAll(".work__item")
+function activeWork() {
+    linkWork.forEach(l => l.classList.remove("active-work"))
+    this.classList.add("active-work")
+}
 
-
+linkWork.forEach(l => l.addEventListener("click", activeWork))
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 
