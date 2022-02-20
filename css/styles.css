@@ -333,12 +333,20 @@ body.light-theme {
   margin-bottom: 2.5rem;
 }
 
+.home__education-frontend {
+  color: lightcoral;
+}
+
+.home__education-full__stack {
+  color: lightgreen;
+}
 .home__name {
   font-size: var(--biggest-font-size);
 }
 
 .home__img {
   width: 160px;
+  height: 300px;
 }
 
 .home__handle {
@@ -350,6 +358,7 @@ body.light-theme {
     hsla(var(--first-hue), var(--sat), var(--lig), 1),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
   );
+
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
   align-items: flex-end;
@@ -484,6 +493,8 @@ body.light-theme {
 
 .about__description {
   margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: center;
 }
 /*=============== SKILLS ===============*/
 
@@ -894,6 +905,7 @@ body.light-theme {
 
   .home__img {
     width: 130px;
+    height: 200px;
   }
 
   .about__info {
@@ -936,6 +948,8 @@ body.light-theme {
 
   .about__description {
     padding: 0 5 rem;
+    text-align: justify;
+    text-justify: center;
   }
 
   .skills__container {
@@ -998,7 +1012,7 @@ body.light-theme {
   }
 
   .section {
-    padding: 6.5rem 0 1rem;
+    padding: 4.5rem 0 1rem;
   }
   .section__title {
     margin-bottom: 3.5rem;
@@ -1015,6 +1029,7 @@ body.light-theme {
 
   .home__img {
     width: 220px;
+    height: 300px;
   }
 
   .home__social-link {
@@ -1052,6 +1067,8 @@ body.light-theme {
   .about__description {
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
+    text-align: justify;
+    text-justify: center;
   }
 
   .skills__container {
