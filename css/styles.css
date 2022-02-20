@@ -412,7 +412,7 @@ body.light-theme {
 .home__scroll {
   color: var(--first-color);
   right: -1.5rem;
-  bottom: 4rem;
+  bottom: 6.5rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
